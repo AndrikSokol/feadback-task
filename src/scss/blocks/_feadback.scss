@@ -1,0 +1,52 @@
+.feadback {
+  &__title {
+    top: -25px;
+    left: 5px;
+    background-color: rgb(241, 185, 80);
+    padding: 8px;
+    position: absolute;
+    color: white;
+  }
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px 10px;
+  background-color: rgb(131, 129, 129);
+  position: relative;
+
+  label {
+    padding-left: 10px;
+    font-size: 16px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .form__phone,
+    .form__name,
+    .form__message,
+    .form__email {
+      padding: 8px 10px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+    }
+
+    .form__message {
+      max-width: 480px;
+      max-height: 200px;
+    }
+
+    .button-submit {
+      padding: 10px 20px;
+      background-color: rgba(0, 0, 0, 0.678);
+      border-radius: 5px;
+      margin: 0 auto;
+      color: white;
+      &:hover {
+        transition: background-color 0.3s ease;
+        background-color: rgba(0, 0, 0, 0.774);
+      }
+    }
+  }
+}
