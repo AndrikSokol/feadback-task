@@ -13,10 +13,10 @@
     />
   </head>
   <body>
-    <section class="feadback container">
-      <h1 class="feadback__title">FeadBack</h1>
+    <section class="feedback container">
+      <h1 class="feedback__title">FeadBack</h1>
       <form class="form form-wrapper">
-        <div class ="form-control">
+        <div class="form-control">
           <label for="name">Name</label>
           <input class="form__name" id="name" type="text" placeholder="Name" />
           <span class="form__error"></span>
@@ -28,12 +28,17 @@
             id="email"
             type="email"
             placeholder="Email"
-            />
-            <span class="form__error"></span>
+          />
+          <span class="form__error"></span>
         </div>
         <div class="form-control">
           <label for="phone">Your phone</label>
-          <input class="form__phone" id="phone" type="text" placeholder="Phone" />
+          <input
+            class="form__phone"
+            id="phone"
+            type="text"
+            placeholder="Phone"
+          />
           <span class="form__error"></span>
         </div>
         <div class="form-control">
@@ -50,6 +55,15 @@
         <button class="form__button button-submit">Submit</button>
       </form>
     </section>
+    <button class="button-modal button-modal--open">
+      Открыть модальное окно
+    </button>
+    <div class="modal">
+      <div class="modal__content">
+        <p>Тут должна быть ваша реклама</p>
+        <span class="button-modal button-modal--close">&times;</span>
+      </div>
+    </div>
     <script src=".bundle.js"></script>
   </body>
 </html>
