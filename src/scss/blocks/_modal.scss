@@ -1,14 +1,21 @@
 .modal {
-  display: none;
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   justify-content: center;
   align-items: center;
-  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  transform: translateX(-100%);
+}
+
+.modal--active {
+  opacity: 1;
+  transform: translateX(0%);
 }
 
 .modal__content {
@@ -28,12 +35,12 @@
 }
 
 .button-modal--open {
-  background: #eebc19;
+  background-color: #eebc19;
   padding: 10px 20px;
 }
 
-.open-modal-btn:hover {
-  background: #beb30e;
+.button-modal--open:hover {
+  background-color: #c59c15;
 }
 
 @keyframes slideIn {
