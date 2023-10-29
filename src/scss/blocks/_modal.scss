@@ -35,6 +35,7 @@
 }
 
 .button-modal--open {
+  text-align: center;
   background-color: #eebc19;
   padding: 10px 20px;
 }
@@ -50,4 +51,8 @@
   to {
     transform: translateY(0);
   }
+}
+
+.button-wrapper {
+  text-align: center;
 }
